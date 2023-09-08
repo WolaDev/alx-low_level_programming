@@ -3,12 +3,10 @@
 
 /* 
  * main - "Programming is like building a multilingual puzzle"
- *
- * with puts() not printf()
- *
  * Retun: Always 0 (Success).
  */
 int main(void)
+/*Initial*/
 {
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
