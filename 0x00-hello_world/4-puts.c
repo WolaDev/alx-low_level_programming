@@ -3,9 +3,7 @@
  * WolaDev
  * A student at Alx_Africa
  * Full Stack Software Engineering Student
-*/
-
-/*A program to display:
+ *A program to display:
  * "Programming is like building a multilingual puzzle"
  * with puts not printf
 */
