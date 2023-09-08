@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/**
+ * main - print size of various types of computer this C is compiled on
+ *
+ */
 int main(void)
 {
 	printf("Size of char: %lu byte(s)\n", sizeof(char));
