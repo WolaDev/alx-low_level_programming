@@ -1,11 +1,4 @@
-/**
- * My First C Program
- * By Abdullahi Olayiwola
- * WolaDev
- * A student at Alx_Africa
- * Full Stack Software Engineering Student
- */
-
+/*My first C program*/
 #include <stdio.h>
 
 /* 
