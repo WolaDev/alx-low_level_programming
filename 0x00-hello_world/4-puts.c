@@ -9,7 +9,7 @@
 #include <stdio.h>
 
 /**
- * A program to display:
+ * 
  * main - "Programming is like building a multilingual puzzle"
  * with puts not printf
  *
