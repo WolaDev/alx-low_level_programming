@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdint.h>
+#include <inttypes.h>
 
 /**
  * main - print size of various types of computer this C is compiled on
