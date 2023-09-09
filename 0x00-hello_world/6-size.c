@@ -3,6 +3,7 @@
 /**
  * main - print size of various types of computer this C is compiled on
  *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
