@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
  * main - Alphabets in lowercase followed by UPPERCASE
@@ -16,10 +18,16 @@ int main(void)
 	while (lowercase <= 'z')
 	{
 		putchar(lowercase);
+
+		lowercase++;
 	}
+
 	while (uppercase <= 'Z')
 	{
-		putchar(uppercase"\n");
+		putchar(uppercase);
+		uppercase++;
+	}
+	putchar('\n');
 
-		return (0);
+	return (0);
 }
