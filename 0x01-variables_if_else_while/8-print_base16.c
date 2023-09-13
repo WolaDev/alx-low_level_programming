@@ -7,17 +7,19 @@
  */
 int main(void)
 {
-	char base;
-	char lower;
+	char base = '0';
+	char lower = 'a';
 
-	for (base = '0'; base <= 9; base++)
+	while (base <= '9')
 	{
 		putchar(base);
+		base++;
 	}
 
-	for (lower = 'a'; lower <= 'f'; lower++)
+	while (lower <= 'f')
 	{
 		putchar(lower);
+		lower++;
 	}
 
 	putchar('\n');
