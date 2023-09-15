@@ -7,36 +7,42 @@
  */
 int main(void)
 {
-	int digit1;
-	int digit2;
-	int digit3;
-	int digit4;
+	int c = 0;
+	int f_d;
+	int l_d;
 
-	for (digit1 = 0; digit1 <= 9; digit1++)
+	int c2;
+	int f_d2;
+	int l_d2;
+
+	while (c <= 98)
 	{
-		for (digit2 = 0; digit2 <= 8; digit2++)
+		f_d = (c / 10 + '0');
+		l_d = (c % 10 + '0');
+		c2 = 0;
+		while (c2 <= 99)
 		{
-			for (digit3 = digit2 + 0; digit3 <= 9; digit3++)
-			{
-				for (digit4 = digit3 + 1; digit4 <= 9; digit4++)
-				{
-					putchar(digit1 + '0');
-					putchar(digit2 + '0');
-					putchar(' ');
-					putchar(digit3 + '0');
-					putchar(digit4 + '0');
+			f_d2 = (c2 / 10 + '0');
+			l_d2 = (c2 % 10 + '0');
 
-					if (digit1 != 9 || digit2 != 9 || digit3 != 9 || digit4 != 9)
-					{
-						putchar(',');
-						putchar(' ');
-					}
+			if (c < c2)
+			{
+				putchar(f_d);
+				putchar(l_d);
+				putchar(' ');
+				putchar(f_d2);
+				putchar(l_d2);
+
+				if (c != 98)
+				{
+					putchar(',');
+					putchar(' ');
 				}
 			}
+			c2++;
 		}
+		c++;
 	}
-
 	putchar('\n');
-
 	return (0);
 }
