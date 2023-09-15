@@ -22,12 +22,15 @@ int main(void)
 	
 		for (digit3 = 0; digit3 <=9; digit3++)
 		{
-			for (digit4 = digit3 + 0; digit4 <= 9; digit4++)
+			for (digit4 = 0; digit4 <= 9; digit4++)
 			{
 				putchar(digit3 + '0');
 				putchar(digit4 + '0');
 				putchar(',');
+			if (digit4 != 9)
+			{
 				putchar(' ');
+			}
 			}
 		}
 		}
