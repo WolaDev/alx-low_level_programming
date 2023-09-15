@@ -14,25 +14,25 @@ int main(void)
 
 	for (digit1 = 0; digit1 <= 9; digit1++)
 	{
-		for (digit2 = 0; digit2 <=9; digit2++)
+		for (digit2 = 0; digit2 <= 9; digit2++)
 		{
-			putchar(digit1 + '0');
-			putchar(digit2 + '0');
-			putchar(' ');
-	
-		for (digit3 = 0; digit3 <=9; digit3++)
-		{
-			for (digit4 = 0; digit4 <= 9; digit4++)
+			for (digit3 = 0; digit3 <= 9; digit3++)
 			{
-				putchar(digit3 + '0');
-				putchar(digit4 + '0');
-				putchar(',');
-			if (digit4 != 9)
-			{
-				putchar(' ');
+				for (digit4 = digit3 + 1; digit4 <= 9; digit4++)
+				{
+					putchar(digit1 + '0');
+					putchar(digit2 + '0');
+					putchar(' ');
+					putchar(digit3 + '0');
+					putchar(digit4 + '0');
+
+					if (digit1 != 9 || digit2 != 9 || digit3 != 9 || digit4 != 9)
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
 			}
-			}
-		}
 		}
 	}
 
