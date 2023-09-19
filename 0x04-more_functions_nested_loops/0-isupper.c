@@ -3,6 +3,8 @@
 /**
  * _isupper - check id a character is in uppercase
  *
+ * @c: function parameter
+ *
  * Return: Always 0.
  */
 int _isupper(int c)
