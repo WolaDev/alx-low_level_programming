@@ -8,6 +8,5 @@
  */
 int main(void)
 {
-	puts(_puts_recursion());
-	retun (0);
+	_putchar(_puts_recursion());
 }
