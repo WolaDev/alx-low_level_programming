@@ -2,7 +2,7 @@
 
 /**
  * factorial - print factorial of numbers greater that 0
- * @s: firts bytes of the memory
+ * @n: firts bytes of the memory
  * Return: -
  */
 int factorial(int n)
@@ -15,5 +15,5 @@ int factorial(int n)
 	{
 		return (1);
 	}
-	return (n * factorial(n -1));
+	return (n * factorial(n - 1));
 }
