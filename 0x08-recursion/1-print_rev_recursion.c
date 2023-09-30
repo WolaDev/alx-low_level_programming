@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _print_rev_recursion: print out string in reverse recursion
+ * _print_rev_recursion - print out string in reverse recursion
  * @s: first bytes of the memory
  * Return: -
  */
