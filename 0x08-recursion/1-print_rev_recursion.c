@@ -2,7 +2,7 @@
 
 /**
  * _print_rev_recursion: print out string in reverse recursion
- * @s: second byte of the memory
+ * @s: first bytes of the memory
  * Return: -
  */
 void _print_rev_recursion(char *s)
