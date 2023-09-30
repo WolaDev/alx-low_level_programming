@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * _puts_recursion - Prints a string followed by a new line.
- * @s: The string to be printed.
+ * _puts_recursion - fills memory with a constant byte.
+ * @s: first bytes of the memory
+ * Return: -
  */
 void _puts_recursion(char *s)
 {
@@ -11,9 +12,7 @@ void _puts_recursion(char *s)
 		_putchar('\n');
 		return;
 	}
-	else
-	{
-		_putchar(*s);
-		_puts_recursion(s + 1);
-	}
+	_putchar(*s);
+	s++;
+	_puts_recursion(s);
 }
