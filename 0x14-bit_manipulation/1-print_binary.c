@@ -1,32 +1,28 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * main - check the code
- *
+ * print_binary - function
+ * @n: a
  * Return: Always 0.
  */
-int main(void)
+
+void print_binary(unsigned long int n)
 {
-    print_binary(0);
-    printf("\n");
-    print_binary(1);
-    printf("\n");
-    print_binary(98);
-    printf("\n");
-    print_binary(1024);
-    printf("\n");
-    print_binary((1 << 10) + 1);
-    printf("\n");
-    return (0);
+	unsigned long int copy = n;
+	int len = 0;
+
+	if (n == 0)
+	{
+		_putchar('0');
+		return;
+	}
+
+	while ((copy >>= 1) > 0)
+		len++;
+
+	while (len >= 0)
+	{
+		((n >> len) & 1) ? _putchar('1') : _putchar('0');
+		len--;
+	}
 }
-/*
-julien@ubuntu:~/0x14. Binary$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-print_binary.c _putchar.c -o b
-julien@ubuntu:~/0x14. Binary$ ./b
-0
-1
-1100010
-10000000000
-10000000001
-julien@ubuntu:~/0x14. Binary$
-*/
